@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Recaptcha", "Added.Recaptcha\Added.Recaptcha.csproj", "{3C635FF4-3319-416E-B4CC-A724C3C6433E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Recaptcha.netFORUM", "Added.Recaptcha.netFORUM\Added.Recaptcha.netFORUM.csproj", "{1A7B5036-32F1-4676-9A38-133DD86E802E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C635FF4-3319-416E-B4CC-A724C3C6433E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C635FF4-3319-416E-B4CC-A724C3C6433E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C635FF4-3319-416E-B4CC-A724C3C6433E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C635FF4-3319-416E-B4CC-A724C3C6433E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7B5036-32F1-4676-9A38-133DD86E802E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7B5036-32F1-4676-9A38-133DD86E802E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7B5036-32F1-4676-9A38-133DD86E802E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7B5036-32F1-4676-9A38-133DD86E802E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F73A456E-F356-4F16-BEA4-F254060372C7}
+	EndGlobalSection
+EndGlobal
