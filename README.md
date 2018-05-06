@@ -38,4 +38,55 @@ Easily add Google reCAPTCHA to your netFORUM forms
 1. Navigate to wizard buttons which should trigger invisible reCAPTCHA
 1. Add "invoke-recaptcha" css class to all wizard buttons which should trigger reCAPTCHA
 
+#### Back to Top Button
+To deal with the Back to top button and the Invisible reCAPTCHA overlap, you can use the following code to move the reCAPTCHA out of the way of the back to top button:
 
+***Note:*** there are curly braces that are netFORUM-escaped with [| or |] to be able to be dropped into an eWeb page detail easily.
+
+```
+<style type="text/css">
+.g-recaptcha [|
+    margin-left: 100px;
+    margin-top: 40px;
+|]
+</style>
+<script type="text/javascript">
+var handler = function () [|
+        var offset = 20; // offset used by FormFunctions for the Back To Top link.
+        var duration = 400; // duration used by FormFunctions for the Back To Top link.
+        var enabled = false;
+
+        function _tryAttach() [|
+            if($('.grecaptcha-badge').length == 0) [|
+                window.setTimeout(_tryAttach, duration);
+            |]
+            else [|
+                window.setTimeout(function () [|
+                    _handler();
+                    $(window).scroll(_handler);
+                |], duration);
+            |]
+        |];
+
+        var _handler = function () [|
+            if (enabled === false && $(window).scrollTop() > offset) [|
+                enabled = true;
+                $('.grecaptcha-badge').animate([| bottom: '80px' |], duration);
+            |] 
+            else if (enabled === true && $(window).scrollTop() <= offset) [|
+                enabled = false;
+                $('.grecaptcha-badge').animate([| bottom: '14px' |], duration);
+            |]
+        |];
+
+        _tryAttach();
+|]
+
+if (typeof (Sys) !== 'undefined' && typeof (Sys.WebForms) !== 'undefined' && typeof (Sys.WebForms.PageRequestManager) !== 'undefined') [|
+    Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(handler);
+|]
+else [|
+    $(handler);
+|]
+</script>
+```
