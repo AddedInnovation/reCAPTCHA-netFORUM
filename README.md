@@ -44,12 +44,6 @@ To deal with the Back to top button and the Invisible reCAPTCHA overlap, you can
 ***Note:*** there are curly braces that are netFORUM-escaped with [| or |] to be able to be dropped into an eWeb page detail easily.
 
 ```
-<style type="text/css">
-.g-recaptcha [|
-    margin-left: 100px;
-    margin-top: 40px;
-|]
-</style>
 <script type="text/javascript">
 var handler = function () [|
         var offset = 20; // offset used by FormFunctions for the Back To Top link.
