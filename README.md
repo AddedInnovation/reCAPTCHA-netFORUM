@@ -4,8 +4,8 @@ Easily add Google reCAPTCHA to your netFORUM forms
 # Installation
 ## Create reCAPTCHA Account
 1. Navigate to [Google reCAPTCHA page](https://www.google.com/recaptcha/admin)
-1. Sign up for account
-1. Follow instructions. Note: for testing, you can specify "localhost" for your URL
+1. Sign up for an account
+1. Follow the instructions. Note: for testing, you can specify "localhost" for your URL
 
 ## Install netFORUM Components
 1. Download or Clone Repo
