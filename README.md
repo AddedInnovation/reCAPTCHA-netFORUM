@@ -11,8 +11,9 @@ Easily add Google reCAPTCHA to your netFORUM forms
 1. Download or Clone Repo
 1. Build Added.Recaptcha.netFORUM Project
 1. Copy Added.Recaptcha.dll and Add.Recaptcha.netFORUM.dll to /eWeb/bin/ directory
+1. Copy contents of Added Recaptcha.netFORUM project /Scripts/AddedInnovation/* to your eWeb Site Root/Scripts/AddedInnovation
 1. Execute reCAPTCHA_MD.sql SQL Script in Added.Recaptcha.netFORUM project /SQL Scripts/ folder
-1. Update reCAPTCHA-PublicKey, reCAPTCHA-PrivateKey, and reCAPTCHA-Enabled system options
+1. Update reCAPTCHA-PublicKey, reCAPTCHA-PrivateKey, and reCAPTCHA-Enabled system options from iWeb the values specified by your Google reCAPTCHA Account. Note: Site Key and Public Key are synonymous
 
 ## Configure netFORUM Components
 ### Add Form Extension
