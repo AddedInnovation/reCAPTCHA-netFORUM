@@ -31,7 +31,7 @@ Easily add Google reCAPTCHA to your netFORUM forms
 1. Before Save Parameters: Page:Page;Control:Control
 
 #### Invisible reCAPTCHA
-1. Load Method: OnLoad_RenderRecaptcha
+1. Load Method: OnLoad_RenderInvisibleRecaptcha
 1. Load Parameters: Page:Page;Control:Control
 1. Before Save Method: BeforeSave_ValidateRecaptcha
 1. Before Save Parameters: Page:Page;Control:Control
