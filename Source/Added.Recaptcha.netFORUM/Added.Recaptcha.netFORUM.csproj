@@ -44,29 +44,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="common, Version=2015.1.2.20128, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\common.dll</HintPath>
+    <Reference Include="common">
+      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\common.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Components, Version=2015.1.2.20140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\Components.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="controls, Version=2015.1.2.20129, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\controls.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="data, Version=2015.1.2.20137, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\data.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="messaging, Version=2015.1.2.20129, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\messaging.dll</HintPath>
+    <Reference Include="data">
+      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\data.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="monitor, Version=2015.1.2.20127, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\monitor.dll</HintPath>
+    <Reference Include="monitor">
+      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\monitor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -88,8 +76,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Utility, Version=2015.1.2.20138, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\netFORUM.Core.2015.1.200.1\lib\Utility.dll</HintPath>
+    <Reference Include="Utility">
+      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\Utility.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -7,6 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Recaptcha", "Added.Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Recaptcha.netFORUM", "Added.Recaptcha.netFORUM\Added.Recaptcha.netFORUM.csproj", "{1A7B5036-32F1-4676-9A38-133DD86E802E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{C184653F-A734-4662-899D-B29C644DFFC6}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\common.dll = Dependencies\common.dll
+		Dependencies\Components.dll = Dependencies\Components.dll
+		Dependencies\controls.dll = Dependencies\controls.dll
+		Dependencies\data.dll = Dependencies\data.dll
+		Dependencies\messaging.dll = Dependencies\messaging.dll
+		Dependencies\monitor.dll = Dependencies\monitor.dll
+		Dependencies\Utility.dll = Dependencies\Utility.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
