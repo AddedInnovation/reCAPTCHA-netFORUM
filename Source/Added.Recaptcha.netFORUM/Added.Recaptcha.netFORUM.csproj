@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Local 2015 Development Site.pubxml" />
   </ItemGroup>
   <ItemGroup>
