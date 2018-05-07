@@ -44,17 +44,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="common">
-      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\common.dll</HintPath>
+    <Reference Include="common, Version=2013.2.4.20, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\common.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="data">
-      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\data.dll</HintPath>
+    <Reference Include="data, Version=2013.2.4.20, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\data.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="monitor">
-      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\monitor.dll</HintPath>
+    <Reference Include="monitor, Version=2013.2.4.1275, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\monitor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -76,8 +79,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Utility">
-      <HintPath>..\..\..\..\VSTS\Added\Added\GCSAA\Main\Source\Dependencies\Utility.dll</HintPath>
+    <Reference Include="Utility, Version=2013.2.4.19, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Utility.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
