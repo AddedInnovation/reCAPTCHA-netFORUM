@@ -71,7 +71,7 @@ var handler = function () [|
         var _handler = function () [|
             if (enabled === false && $(window).scrollTop() > offset) [|
                 enabled = true;
-                $('.grecaptcha-badge').animate([| bottom: '80px' |], duration);
+                $('.grecaptcha-badge').animate([| bottom: '100px' |], duration);
             |] 
             else if (enabled === true && $(window).scrollTop() <= offset) [|
                 enabled = false;
