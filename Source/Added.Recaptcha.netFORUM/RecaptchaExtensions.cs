@@ -15,11 +15,15 @@ namespace Added.Recaptcha.netFORUM
 
         protected const string RecaptchaScriptKey = "Added.reCAPTCHA.js";
 
+        protected const string DefaultClientScriptFilePath = "/Scripts/AddedInnovation/netFORUM.reCAPTCHA.js";
+
         public const string RecaptchaPublicKeySystemOption = "reCAPTCHA-PublicKey";
 
         public const string RecaptchaPrivateKeySystemOption = "reCAPTCHA-PrivateKey";
 
         public const string RecaptchaEnabledSystemOption = "reCAPTCHA-Enabled";
+
+        public const string RecaptchaClientScriptFilePathSystemOption = "reCAPTCHA-ClientScriptFilePath";
 
         public static RecaptchaConfiguration CreateRecaptchaConfigurationFromSystemOptions()
         {
@@ -44,11 +48,30 @@ namespace Added.Recaptcha.netFORUM
             return config;
         }
 
+        public string GetLoadingScriptFilePath()
+        {
+            var path = Config.GetSystemOption(RecaptchaClientScriptFilePathSystemOption);
+
+            if (String.IsNullOrWhiteSpace(path))
+            {
+                path = DefaultClientScriptFilePath;
+            }
+
+            path = path.Trim();
+
+            if (path.StartsWith(@"~") || path.StartsWith(@"/"))
+            {
+                path = String.Concat(Config.Context.Request.ApplicationPath.Trim(), @"/", path.TrimStart(new char[] { '~' }).TrimStart(new char[] { '/' }));
+            }
+
+            return path;
+        }
+
         public void AddLoadingScript(Page page)
         {
             if (!page.ClientScript.IsClientScriptIncludeRegistered(LoadingScriptKey))
             {
-                page.ClientScript.RegisterClientScriptInclude(LoadingScriptKey, String.Concat(Config.Context.Request.ApplicationPath.Trim(), "/Scripts/AddedInnovation/netFORUM.reCAPTCHA.js"));
+                page.ClientScript.RegisterClientScriptInclude(LoadingScriptKey, GetLoadingScriptFilePath());
             }
         }
 
