@@ -1,6 +1,4 @@
 ﻿var netFORUM = (function ($) {
-    'use strict';
-
     /* Private Variables & Functions */
 
     function _onPageLoad(handler) {
@@ -46,8 +44,6 @@
 })(typeof (jQuery) !== 'undefined' ? jQuery : null);
 
 netFORUM.reCAPTCHA = (function ($) {
-    'use strict';
-
     /* Private Variables & Functions */
 
     var onsuccess = function () { };
