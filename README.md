@@ -42,7 +42,7 @@ Easily add Google reCAPTCHA to your netFORUM forms
 1. Before Save Method: BeforeSave_ValidateRecaptcha
 1. Before Save Parameters: Page:Page;Control:Control
 1. Navigate to wizard buttons which should trigger invisible reCAPTCHA
-   ***Note:*** There is currently a bug that prevents this solution from working on buttons that use "submit" behavior which appears to affect "Validate" wizard buttons.
+- ***Note:*** There is currently a bug that prevents this solution from working on buttons that use "submit" behavior which appears to affect "Validate" wizard buttons.
 1. Add "invoke-recaptcha" css class to all wizard buttons which should trigger reCAPTCHA
 
 #### Back to Top Button
